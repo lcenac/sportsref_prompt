@@ -1,4 +1,4 @@
 # Sports Ref Prompt
-Based on the data example given in the prompt, I treated the team win–loss records as a matrix, where each row represents a team and each column represents that team’s record against another team. The function first sorts the team names so it matches how the sample table looks (alphabetical order). Using a nested loop, the outer loop selects the current team (row), while the inner loop iterates over all opponents (columns). If the team is compared to itself, "--" is inserted; otherwise, the number of wins against the opposing team is pulled from the data and added to the row.
+Based on the data example given in the prompt, I treated the team win–loss records as a matrix, where each row represents a team and each column represents that team’s record against another team. Using a nested loop, the outer loop selects the current team , while the inner loop iterates over all opponents. If the teams from the outer and inner loop are the same, "--" is inserted to mimic the table example. When the teams are not the same, the number of wins against the opposing team is pulled from the data and added to the row.
 
-Finally, all rows are combined into a formatted string that represents the complete head-to-head table.
+
